@@ -1,0 +1,74 @@
+
+
+body{
+    background-image: url(fundo.png);
+}
+
+#formulario{
+    display: inline-block;
+    border-radius: 10px;
+    background-color:#c2e7f8fb;
+    width: 300px;
+    height: auto;
+    margin-left: 1000px;
+   
+}
+#email, #senha{
+    margin-bottom: 10px;
+    margin-left: 60px ;
+}
+#entrar{
+    margin-left: 120px;
+    margin-bottom: 60px;
+    
+}
+#inscrever{
+    border-radius: 10px;
+    background-color: #c2e7f8fb;
+    margin-left: 40px;
+    
+}
+
+
+#txto1{
+display: inline-block;
+background-color: rgba(194, 231, 248, 0.986);
+width: 300px;
+height: auto;
+margin-left: 15px;
+text-align: center;
+ }
+h2{
+    font-family: Arialblack;
+    font-weight: 700;
+    font-size: 30px;
+}
+#txto2{
+    width: 10px;
+    height: auto;
+    }
+h1{
+    text-align: center;
+    font-family: Arialblack;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+#logoForm{
+    width: 155px;
+    height: 155px;
+}
+#txt2{
+    width: 50%;
+    
+}
+header{
+    width: 100%;
+  height: 200px;
+}
+#logo{
+width: 100%;
+  height: 200px;
+  object-fit: contain
+  
+}

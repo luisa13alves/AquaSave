@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist</title>
+    <link rel="stylesheet" href="playlist.css">
+    <style> 
+    </style>
+</head>
+<body>
+    <div  class="header"> 
+        <img id="logo" src="Aqua.png" >
+      </div>
+    <h1 style="text-align: center;" >Escolha o gênero musical</h1>
+
+    <div class="row" style="display: flex; flex-direction: column; ">
+        <button id="btn1" onclick="irParaFunk()">Funk</button>
+        <button id="btn2" onclick="irParaSertanejo()">Sertanejo</button>
+        <button id="btn3" onclick="irParaEletro()">Eletronica</button>
+        <button id="btn4" onclick="irParaPagode()">Pagode</button>
+        <button id="btn5" onclick="irParaRap()">Rap</button>
+        <button id="btn6" onclick="voltarCronometro()">Voltar</button>
+        </div>
+       
+        <script>
+            function abrirPlaylist(URL){
+                window.open(URL, '_blank');
+            }
+          function irParaFunk(){
+            abrirPlaylist("https://youtube.com/playlist?list=PLb0wL_P5C-jK8QeZ_uv7J5aeIj1_s9y38&si=YzvFP0RaZ9494m_d")
+          }
+          function irParaSertanejo(){
+            abrirPlaylist("https://youtube.com/playlist?list=PLb0wL_P5C-jLCBsR68syl2Qm-r68YL7Jw&si=I96a-_NzgsXip8-i")
+          }
+          function irParaEletro(){
+            abrirPlaylist("https://youtube.com/playlist?list=PLb0wL_P5C-jJLcKZOpHR31ijCmtgK34Gr&si=cs-z1B3DjONO8PdY")
+          }
+          function irParaPagode(){
+            abrirPlaylist("https://youtube.com/playlist?list=PLb0wL_P5C-jLeRI8bYOd5TxmD_STmuPPr&si=-NLKhiRLgPyCzbzT")
+          }
+          function irParaRap(){
+            abrirPlaylist("https://youtube.com/playlist?list=PLb0wL_P5C-jKyVFC9jH1Wi1WfsZW_-LYU&si=hqT_jwdzVrdKJN6B")
+          }
+         
+          function voltarCronometro(){
+            window.location.href = "cronometro.html";
+          }
+        </script>
+</body>
+</html>

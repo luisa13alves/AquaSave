@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaSave</title> 
+    <link rel="stylesheet" href="login.css">
+</head>
+<body> 
+<div  class="header"> 
+  <img id="logo" src="Aqua.png" >
+</div>
+<img id="txt2" src="vocesabia.png">
+
+<div id="txto1">
+ <h2> Desperdício de água durante o banho</h2>
+ <p>
+  A água é um recurso natural essencial para a vida humana. No entanto, é um recurso finito e que precisa ser usado de forma responsável. 
+  O desperdício de água é um problema grave que pode ter impactos negativos no meio ambiente e na sociedade. <br>
+  Além de evitar o desperdício de água, é importante conscientizar outras pessoas sobre a importância de economizar esse recurso. 
+  Podemos fazer isso falando sobre o assunto com amigos, familiares e colegas de trabalho. 
+  Também podemos participar de campanhas de conscientização sobre o uso da água. <br>
+  Ao tomar atitudes simples para evitar o desperdício de água durante o banho,
+  podemos contribuir para a preservação do meio ambiente e garantir um futuro melhor para todos.
+ </p>
+</div>
+
+
+<div id="formulario"> 
+   <form action="/login" method="post">
+   <h1><img id="logoForm" src="Aqua.png" ></h1>
+     <input id="email" name="username" placeholder="Email"> <br>
+     <input id="senha" name="password" placeholder="Senha"> <br>
+     <button id="entrar" value="Entrar" onclick="irParaCronometro()">Login</button>
+   </form>
+   <b><p id="inscrever">Ainda não faz parte? <button onclick="irParaCadastro()">Inscreva-se</button></p> </b>
+</div> 
+
+
+
+ <script>
+  function irParaCadastro(){
+    window.location.href = "cadastro.html"; 
+  }
+  function irParaCronometro(){
+   window.location.href = "cronometro.html";
+  }
+ </script>
+
+
+</body>
+</html>

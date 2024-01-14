@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historico</title>
+    <link rel="stylesheet" href="historico.css">
+</head>
+<body>
+    <div  class="header"> 
+        <img id="logo" src="Aqua.png" >
+      </div>
+   <h1 style="text-align: center;" >Histórico</h1>
+   <p>Esta página contém todos os dados registrados dos seus últimos banhos. 
+    Esses dados podem ser usados para ajudá-lo a ter um controle melhor sobre os seus gastos.</p>
+
+    <div id="tabelaHistorico" >   
+     
+    <table cellspacing="10" >
+             <tr> 
+<th >Tempo do banho </th>
+<th>Total em R$ </th>
+<th>Litros de agua </th>
+            </tr>
+            <tr>
+                <td> minutos</td>
+                <td>R$</td>
+                <td> Litros</td>
+            </tr>
+    </table>
+</div>
+<button id ="btn2" onclick="mostrarDados()">Ultimos Banhos </button>
+<button id="btn1" onclick="irParaCronometro()">Voltar</button>
+ <script>
+ function irParaCronometro(){
+   window.location.href = "cronometro.html";
+  }
+ </script>
+
+</body>
+</html>
