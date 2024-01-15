@@ -1,0 +1,112 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #c2e7f8fb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+}
+
+h1{
+    font-family: Arial;
+    font-size: 24px;
+}
+p{
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.sectionForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .btnSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+  }
+
+  .btnSubmit{
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: #2eb9fafb;
+    width: 100px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.btnSubmit:hover{
+    background-color: #fff;
+    color: #2eb9fafb;
+    transform: scale(1.2);
+}
+  header{
+    width: 100%;
+    height: 200px;
+}
+
+span{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.register{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#logo{
+  width: 100%;
+    height: 200px;
+    object-fit: contain
+    
+  }
+
+  @media screen and (min-width: 768px) {
+    form{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+  form{
+      width: 30%;
+  }
+}

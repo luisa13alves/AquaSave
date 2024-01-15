@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  body {
+    background-color: #c2e7f8fb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 16px;
+    width: 100%;
+  }
+
+  .logout{
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: #fff;
+    width: 100px;
+    color: #2eb9fafb;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .6s;
+    margin-bottom: 10px;
+    width: 100px;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+  }
+
+h1{
+    font-family: Arial;
+    font-size: 24px;
+}
+#cronometro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#cronometro ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+#cronometro li {
+    margin-right: 10px; 
+}
+
+#botoes{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#start {
+    width: 40%;
+    padding: 8px;
+    margin-right: 10px;
+    background-color: green;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+#pause{
+    width: 40%;
+    padding: 8px;
+    margin-right: 10px;
+    background-color: red;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#zerar{
+    width: 40%;
+    padding: 8px;
+    margin-right: 10px;
+    background-color: blue;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#txt1{
+display: inline-block;
+background-color: rgba(194, 231, 248, 0.986);
+text-align: center;
+}
+#txt2{
+    display: inline-block;
+    background-color: rgba(194, 231, 248, 0.986);
+    text-align: center;
+}
+.btnActions{
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: #fff;
+    width: 100px;
+    color: #2eb9fafb;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .6s;
+    margin: 10px 0;
+    width: 100px;
+}
+
+.btnActions:hover{
+    transform: scale(1.2);
+}
+
+#logo{
+    width: 100%;
+      height: 200px;
+      object-fit: contain
+}
+
+@media screen and (min-width: 768px) {
+    #botoes{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #botoes{
+        width: 30%;
+    }
+}

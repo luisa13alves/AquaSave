@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaSave</title> 
+    <link rel="stylesheet" href="login.css">
+</head>
+<body> 
+<div  class="header"> 
+  <img id="logo" src="./src/assets/img/Aqua.png" >
+  <div class="formulario"> 
+    <form action="/login" method="post">
+      <div class="labelInput">
+        <label for="email">Digite seu email:</label>
+        <input id="email" name="username" placeholder="Email"> 
+      </div>
+      <div class="labelInput">
+        <label for="senha">Digite sua senha:</label>
+        <input id="senha" name="password" placeholder="Senha">
+      </div> 
+      <button id="entrar" value="Entrar" onclick="irParaCronometro()" class="btnSubmit">Entrar</button>
+    </form>
+    <b><p id="inscrever">Ainda não faz parte? <span onclick="irParaCadastro()" class="btnRegister">Inscreva-se</span></p> </b>
+ </div> 
+</div>
+<img id="txt2" class="vocesabia" src="./src/assets/img/vocesabia.png">
+
+<div id="txto1">
+ <h2 class="subtitle"> Desperdício de água durante o banho</h2>
+ <p>
+  A água é um recurso natural essencial para a vida humana. No entanto, é um recurso finito e que precisa ser usado de forma responsável. 
+  O desperdício de água é um problema grave que pode ter impactos negativos no meio ambiente e na sociedade. <br>
+  Além de evitar o desperdício de água, é importante conscientizar outras pessoas sobre a importância de economizar esse recurso. 
+  Podemos fazer isso falando sobre o assunto com amigos, familiares e colegas de trabalho. 
+  Também podemos participar de campanhas de conscientização sobre o uso da água. <br>
+  Ao tomar atitudes simples para evitar o desperdício de água durante o banho,
+  podemos contribuir para a preservação do meio ambiente e garantir um futuro melhor para todos.
+ </p>
+</div>
+
+ <script>
+  function irParaCadastro(e){
+    // Trabalhar com os dados do form
+    window.location.href = "./src/pages/register/cadastro.html"; 
+    
+
+  }
+  function irParaCronometro(){
+   window.location.href = "./src/pages/timer/cronometro.html";
+  }
+ </script>
+
+
+</body>
+</html>

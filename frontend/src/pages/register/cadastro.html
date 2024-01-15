@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <div  class="header"> 
+        <img id="logo" src="../../assets/img/Aqua.png" >
+      </div>
+    <h1 style="text-align: center;">ECONOMIZE ÁGUA!</h1>
+    <p>Quer economizar água no seu banho? <br><br>
+    Então inscreva-se no nosso site e tenha acesso a dicas, informações e ferramentas para tomar banho sem desperdício.</p>
+   <div class="sectionForm">
+
+   <form action= "link.php" method="post">
+        <input type="text" name= "nome"  placeholder="Nome Completo" required> 
+        <input type="email" name= "email" placeholder="Email" required>
+        <input type="password" name= "senha" placeholder="Senha" required>
+        <input type="text" name="cep" placeholder="CEP" required>
+        <div class="btnSection">
+            <button type="submit" id="btnEn" class="btnSubmit">Cadastrar</button>
+            <p class="register">Já tem cadastro? <span onclick="irParaLogin()">Ir para o login</span></p>
+        </div>
+    </form>
+    </div>
+
+    <script>
+        function irParaLogin(){
+          window.location.href = "../../../index.html"; 
+        }
+       </script>
+
+</body>
+</html>
