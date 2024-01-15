@@ -9,18 +9,25 @@
     </style>
 </head>
 <body>
-    <div  class="header"> 
+    <header  class="header"> 
         <img id="logo" src="Aqua.png" >
-      </div>
+      </header>
     <h1 style="text-align: center;" >Escolha o gênero musical</h1>
 
-    <div class="row" style="display: flex; flex-direction: column; ">
-        <button id="btn1" onclick="irParaFunk()">Funk</button>
-        <button id="btn2" onclick="irParaSertanejo()">Sertanejo</button>
-        <button id="btn3" onclick="irParaEletro()">Eletronica</button>
-        <button id="btn4" onclick="irParaPagode()">Pagode</button>
-        <button id="btn5" onclick="irParaRap()">Rap</button>
-        <button id="btn6" onclick="voltarCronometro()">Voltar</button>
+    <div class="sessionPlayList">
+        <div class="btnSession">
+          <button id="btn1" onclick="irParaFunk()">Funk</button>
+          <button id="btn2" onclick="irParaSertanejo()">Sertanejo</button>
+        </div>
+        <div class="btnSession">
+          <button id="btn3" onclick="irParaEletro()">Eletronica</button>
+          <button id="btn4" onclick="irParaPagode()">Pagode</button>
+        </div>
+          <div class="btnSession">
+            <button id="btn5" onclick="irParaRap()">Rap</button>
+            <button id="btn6" onclick="irParaRock()()">Rock</button>
+          </div>
+          <button class="btnBack" onclick="voltarCronometro()">Voltar</button>
         </div>
        
         <script>
@@ -42,6 +49,11 @@
           function irParaRap(){
             abrirPlaylist("https://youtube.com/playlist?list=PLb0wL_P5C-jKyVFC9jH1Wi1WfsZW_-LYU&si=hqT_jwdzVrdKJN6B")
           }
+          function irParaRock(){
+            abrirPlaylist("https://www.youtube.com/playlist?list=PLHsiXEPkNLkSrcFDlaqdWjDdxn3CCcbJP")
+          }
+
+          
          
           function voltarCronometro(){
             window.location.href = "cronometro.html";
