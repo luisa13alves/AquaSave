@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <button onclick="logout()" id="sair"><b>Logout </b></button>
+  <button onclick="logout()" id="sair" class="logout"><b>Logout</b></button>
   <div  class="header"> 
     <img id="logo" src="Aqua.png" >
   </div>
@@ -38,48 +38,61 @@
     <p><b>Gosta de escutar musica no banho? </b></p> 
     <p><b>ACESSE A PLAYLIST E DIVIRTA-SE!</b></p> 
   
-    <button href="playlist.html" id="musicas">Playlist</button>
+    <button href="playlist.html" id="musicas" class="btnActions" onclick="irParaPlaylist()">Playlist</button>
     </div>
 
     <div id="txt2">
         <p><b>ACESSE O SEU HISTÓRICO DO SEUS ULTIMOS BANHOS!</b></p>
-        <button href="historico.html" id="historico">Histórico</button>
+        <button href="historico.html" id="historico" class="btnActions" onclick="irParaHistorico()">Histórico</button>
     
 
     </div>
         <script>
-          var cronometro;
-          var tempoInicial = 0; 
 
-          function iniciarCronometro() 
-          { cronometro = setInterval( function() { 
-  tempoInicial++;
-  atualizarTempo();
-}, 1000);
-}
-         function pararCronometro(){
-          clearInterval(cronometro);
-         } 
-
-         function zerarCronometro() {
-      tempoInicial = 0;
-      atualizarTempo();
+  function irParaPlaylist(){
+      window.location.href = "playlist.html"; 
     }
-         function atualizarTempo(){
-          var horas = Math.floor(tempoInicial / 3600);
-          var minutos = Math.floor((tempoInicial % 3600)/ 60);
-          var segundos = tempoInicial % 60;
-          document.getElementById('hora').innerText = formatarTempo(horas);
-          document.getElementById('minuto').innerText = formatarTempo(minutos);
-          document.getElementById('segundo').innerText = formatarTempo(segundos);
-          
- function formatarTempo(timer){
-return timer < 10 ? '0' + timer:timer; 
- }
-}
-function logout(){
-  window.location.href = "login.html" ;
-}
+    function irParaHistorico(){
+    window.location.href = "historico.html";
+    }
+
+    function logout(){
+      window.location.href = "login.html" ;
+    }
+
+    var cronometro;
+    var tempoInicial = 0; 
+
+    function iniciarCronometro() 
+      { cronometro = setInterval( function() { 
+          tempoInicial++;
+          atualizarTempo();
+        }, 1000);
+      }
+
+      function pararCronometro(){
+        clearInterval(cronometro);
+      } 
+
+      function zerarCronometro() {
+        tempoInicial = 0;
+        pararCronometro()
+        atualizarTempo();
+      }
+
+      function formatarTempo(timer){
+          return timer < 10 ? '0' + timer:timer; 
+      }
+
+      function atualizarTempo(){
+        var horas = Math.floor(tempoInicial / 3600);
+        var minutos = Math.floor((tempoInicial % 3600)/ 60);
+        var segundos = tempoInicial % 60;
+        document.getElementById('hora').innerText = formatarTempo(horas);
+        document.getElementById('minuto').innerText = formatarTempo(minutos);
+        document.getElementById('segundo').innerText = formatarTempo(segundos);
+      }
+
         </script>
           
 </body>
