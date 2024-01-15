@@ -61,23 +61,33 @@
     }
 
     var cronometro;
-    var tempoInicial = 0; 
+    var tempoInicial = 0;
+    var iniciouCronometro = false;
 
-    function iniciarCronometro() 
-      { cronometro = setInterval( function() { 
+    function iniciarCronometro(){ 
+      if(!iniciouCronometro){
+        cronometro = setInterval( function() { 
           tempoInicial++;
           atualizarTempo();
         }, 1000);
+        iniciouCronometro = true;
+      }
       }
 
       function pararCronometro(){
-        clearInterval(cronometro);
+        if(iniciouCronometro){
+          clearInterval(cronometro);
+          iniciouCronometro = false;
+        }
       } 
 
       function zerarCronometro() {
-        tempoInicial = 0;
-        pararCronometro()
-        atualizarTempo();
+        if(iniciouCronometro){
+          tempoInicial = 0;
+          pararCronometro()
+          atualizarTempo();
+          iniciouCronometro = false;
+        }
       }
 
       function formatarTempo(timer){
