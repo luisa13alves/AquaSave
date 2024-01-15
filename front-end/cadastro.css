@@ -22,6 +22,9 @@ p{
   input{
     width: 100%;
     margin-bottom: 30px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
   }
   form{
     width: 400px;
