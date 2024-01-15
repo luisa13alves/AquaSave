@@ -9,11 +9,25 @@
 <body> 
 <div  class="header"> 
   <img id="logo" src="Aqua.png" >
+  <div class="formulario"> 
+    <form action="/login" method="post">
+      <div class="labelInput">
+        <label for="email">Digite seu email:</label>
+        <input id="email" name="username" placeholder="Email"> 
+      </div>
+      <div class="labelInput">
+        <label for="senha">Digite sua senha:</label>
+        <input id="senha" name="password" placeholder="Senha">
+      </div> 
+      <button id="entrar" value="Entrar" onclick="irParaCronometro()" class="btnSubmit">Entrar</button>
+    </form>
+    <b><p id="inscrever">Ainda não faz parte? <span onclick="irParaCadastro()" class="btnRegister">Inscreva-se</span></p> </b>
+ </div> 
 </div>
-<img id="txt2" src="vocesabia.png">
+<img id="txt2" class="vocesabia" src="vocesabia.png">
 
 <div id="txto1">
- <h2> Desperdício de água durante o banho</h2>
+ <h2 class="subtitle"> Desperdício de água durante o banho</h2>
  <p>
   A água é um recurso natural essencial para a vida humana. No entanto, é um recurso finito e que precisa ser usado de forma responsável. 
   O desperdício de água é um problema grave que pode ter impactos negativos no meio ambiente e na sociedade. <br>
@@ -24,19 +38,6 @@
   podemos contribuir para a preservação do meio ambiente e garantir um futuro melhor para todos.
  </p>
 </div>
-
-
-<div id="formulario"> 
-   <form action="/login" method="post">
-   <h1><img id="logoForm" src="Aqua.png" ></h1>
-     <input id="email" name="username" placeholder="Email"> <br>
-     <input id="senha" name="password" placeholder="Senha"> <br>
-     <button id="entrar" value="Entrar" onclick="irParaCronometro()">Login</button>
-   </form>
-   <b><p id="inscrever">Ainda não faz parte? <button onclick="irParaCadastro()">Inscreva-se</button></p> </b>
-</div> 
-
-
 
  <script>
   function irParaCadastro(){
