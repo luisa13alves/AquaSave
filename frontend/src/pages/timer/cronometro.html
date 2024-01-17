@@ -31,9 +31,16 @@
    <button onclick="iniciarCronometro()"id="start" ><b>Iniciar</b></button> 
    <button onclick="pararCronometro()"id="pause"><b>Pausar</b></button>
    <button onclick="zerarCronometro()" id="zerar"><b>Reiniciar</b></button>
-   
   </div>
-<div id="txt1"> 
+
+  <form class="formTimerShower">
+    <h2>Registre seu tempo de banho:</h2>
+    <input type=number placeholder="Minutos" min="0" max="59" required/>
+    <input type=number placeholder="Segundos" min="0" max="59" required/>
+    <button class="btnSubmitTimer">Salvar tempo</button>
+   </form>
+
+  <div id="txt1"> 
  
     <p><b>Gosta de escutar musica no banho? </b></p> 
     <p><b>ACESSE A PLAYLIST E DIVIRTA-SE!</b></p> 

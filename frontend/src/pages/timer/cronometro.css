@@ -33,10 +33,54 @@
     left: 15px;
   }
 
+.formTimerShower{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 h1{
     font-family: Arial;
     font-size: 24px;
 }
+
+h2{
+    font-family: Arial;
+    font-size: 18px;
+}
+
+input{
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    width: 50%;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+.btnSubmitTimer{
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: #2eb9fafb;
+    width: 50%;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.btnSubmitTimer:hover{
+    background-color: #fff;
+    color: #2eb9fafb;
+    transform: scale(1.2);
+}
+
 #cronometro{
     display: flex;
     justify-content: center;
@@ -68,7 +112,6 @@ h1{
     color: #ffffff;
     border-radius: 8px;
     cursor: pointer;
-    
 }
 #pause{
     width: 40%;
